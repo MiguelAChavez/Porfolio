@@ -1,0 +1,6 @@
+nav {
+    display: flex;
+    padding: 1rem;
+    background-color: #000208;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
