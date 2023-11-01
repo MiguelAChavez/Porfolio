@@ -1,13 +1,11 @@
 import { useState } from "react";
 
-function ButtonNav({ key, onAction, text }) {
+function ButtonNav({ onAction, text }) {
   return (
     <li>
-      <samp>
-        <button id={key} onClick={onAction}>
-          {text}
-        </button>
-      </samp>
+      <a href="/" onClick={onAction}>
+        <span>{text} </span>
+      </a>
     </li>
   );
 }
