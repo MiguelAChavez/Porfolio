@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./navStyle.css";
 import ButtonNav from "./ButtonNav.jsx";
 import HamburgerButton from "./HamburgerButton";

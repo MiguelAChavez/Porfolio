@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import NavBar from "../NavBar/NavBar.jsx";
 import TextContent from "../TextContent/TextContent.jsx";
