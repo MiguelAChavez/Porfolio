@@ -6,7 +6,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <TextContent></TextContent>
-      <main>
+      <main className="app">
         <div className=""></div>
       </main>
     </>
