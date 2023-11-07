@@ -14,9 +14,8 @@
 .app {
     display: flex;
     align-items: center;
-    background-color: #2c0d55;
+    background-color: #1b0832;
     padding: 0px 30px 0px 30px;
-    cursor: pointer;
     border: 1px solid red;
     min-height: 100vh;
 }

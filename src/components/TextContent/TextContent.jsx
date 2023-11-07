@@ -24,6 +24,7 @@ function TextContent() {
   return (
     <div className="text-content" ref={textContentRef}>
       <h1>Hola Mundo;</h1>
+      <span className="text-typing">Programador...</span>
     </div>
   );
 }
