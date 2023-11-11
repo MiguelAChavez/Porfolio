@@ -8,7 +8,7 @@ function App() {
       <NavBar></NavBar>
       <TextContent></TextContent>
       <main className="app">
-        <div className=""></div>
+        <div className=""> </div>
       </main>
       <Footer></Footer>
     </>
