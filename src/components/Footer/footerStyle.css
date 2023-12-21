@@ -3,4 +3,5 @@ footer {
     height: 5rem;
     display: flex;
     flex-direction: column;
+    background-color: rgb(223, 225, 226);
 }

@@ -14,8 +14,6 @@
 
    color-scheme: light dark;
    color: rgba(255, 255, 255, 0.87);
-   background-color: #232225;
-
    --scrollbar-width: 15px;
    --scrollbar-height: 15px;
    --scrollbar-border-thickness: 0px;
@@ -34,9 +32,11 @@
 }
 
 body {
-   height: 100vh;
+   height: 100%;
    width: 100%;
    margin: 0;
+   background-color: #385996;
+   background-image: linear-gradient(180deg, #000000 70%, #232225 100%);
    overflow: auto;
 }
 

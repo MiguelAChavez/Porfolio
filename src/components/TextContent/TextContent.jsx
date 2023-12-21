@@ -22,10 +22,10 @@ function TextContent() {
   });
 
   return (
-    <section className="text-content" ref={textContentRef}>
+    <div className="text-content" ref={textContentRef}>
       <h1>Hola Mundo;</h1>
       <span className="text-typing">Programador...</span>
-    </section>
+    </div>
   );
 }
 
