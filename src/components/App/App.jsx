@@ -6,8 +6,8 @@ import { v4 as uuidv4 } from "uuid";
 import Footer from "../Footer/Footer";
 import GitHub from "../../assets/Icon/GitHub";
 import LinkedIn from "../../assets/Icon/Linkedin";
-import Badge from "../Badge";
 import MailIcon from "../../assets/Icon/MailIcon";
+import Badge from "../Badge";
 
 const App = () => {
   return (
