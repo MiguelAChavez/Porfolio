@@ -7,7 +7,6 @@ import Footer from "../Footer/Footer";
 import GitHub from "../../assets/Icon/GitHub";
 import MailIcon from "../../assets/Icon/MailIcon";
 import Badge from "../Badge";
-import LinkedIn from "/src/assets/Icon/Linkedin";
 
 const App = () => {
   return (
@@ -37,9 +36,7 @@ const App = () => {
               link={"https://www.linkedin.com/in/miguelangelchavez-/"}
               red={"LinkedIn"}
               shadow={"hover:shadow-blue-500/50"}
-            >
-              <LinkedIn className="size-5"></LinkedIn>
-            </Badge>
+            ></Badge>
 
             <Badge
               link={"https://github.com/MiguelAChavez"}
