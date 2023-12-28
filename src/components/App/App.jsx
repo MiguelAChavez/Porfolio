@@ -5,9 +5,9 @@ import Perfil from "../Perfil";
 import { v4 as uuidv4 } from "uuid";
 import Footer from "../Footer/Footer";
 import GitHub from "../../assets/Icon/GitHub";
-import LinkedIn from "../../assets/Icon/Linkedin";
 import MailIcon from "../../assets/Icon/MailIcon";
 import Badge from "../Badge";
+import LinkedIn from "../../assets/Icon/Linkedin";
 
 const App = () => {
   return (

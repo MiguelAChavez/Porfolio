@@ -1,6 +1,6 @@
 import React from "react";
 
-const LinkedIn = ({ className }) => {
+const Linkedin = ({ className }) => {
   return (
     <svg
       className={className}
@@ -18,4 +18,4 @@ const LinkedIn = ({ className }) => {
   );
 };
 
-export default LinkedIn;
+export default Linkedin;
