@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer";
 import GitHub from "../../assets/Icon/GitHub";
 import MailIcon from "../../assets/Icon/MailIcon";
 import Badge from "../Badge";
-import LinkedIn from "../../assets/Icon/Linkedin";
+import LinkedIn from "/src/assets/Icon/Linkedin";
 
 const App = () => {
   return (
