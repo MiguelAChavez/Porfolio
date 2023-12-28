@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
    margin: 0;
    padding: 0;
@@ -5,7 +9,7 @@
 }
 
 ::selection {
-   background-color: blueviolet;
+   background-color: rgb(110, 67, 230);
 }
 
 :root {
@@ -14,16 +18,13 @@
 
    color-scheme: light dark;
    color: rgba(255, 255, 255, 0.87);
-   --scrollbar-width: 15px;
-   --scrollbar-height: 15px;
    --scrollbar-border-thickness: 0px;
    --show-double-buttons: none;
-   --scrollbar-border-radius: 6px;
-   --scrollbar-thumb-color: #A13BF6;
-   --scrollbar-track-color: #4c3896;
-   --scrollbar-track-color-2: #385996;
-   --scrollbar-button-color: #3D3D43;
-   --scrollbar-corner-color: #E3DEFF;
+   --scrollbar-width: 15px;
+   --scrollbar-height: 15px;
+   --scrollbar-border-radius: 5px;
+   --scrollbar-thumb-color: #444C59;
+   --scrollbar-track-color: #3C494B85;
    font-synthesis: none;
    text-rendering: optimizeLegibility;
    -webkit-font-smoothing: antialiased;
@@ -32,11 +33,13 @@
 }
 
 body {
-   height: 100%;
-   width: 100%;
-   margin: 0;
+   font-family: "Noto Sans Cham Variable";
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   min-height: 100vh;
 }
-
 
 body::-webkit-scrollbar {
    width: var(--scrollbar-width, 20px);
@@ -50,7 +53,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-   background-image: linear-gradient(162deg, var(--scrollbar-track-color, #A1A1AA), var(--scrollbar-track-color-2, #A1A1AA));
+   background: var(--scrollbar-track-color, #A1A1AA);
 }
 
 body::-webkit-scrollbar-corner {

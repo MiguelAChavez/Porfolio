@@ -1,0 +1,46 @@
+.app {
+    flex-direction: column;
+    max-width: 800px;
+    z-index: 3;
+}
+
+.text-typing {
+    display: block;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 30ch;
+    height: 1.3em;
+    animation: typing 2s steps(30), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.background-overlay {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+        linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+    background-size: 14px 24px;
+    mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    40% {
+        border-color: rgba(255, 255, 255, 0.438);
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
