@@ -12,11 +12,8 @@ const buttons = [
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center py-3">
-      <nav
-        className="fixed top-0 left-0 flex justify-center flex-row gap-x-10 py-3 bg-indigo-950/35
-      [mask-image:radial-gradient(ellipse_60%_80%_at_50%_50%,#000_60%,transparent_100%)]"
-      >
+    <header className="flex justify-center items-center py-3">
+      <nav className="fixed top-0 flex justify-center flex-row gap-x-10 py-2 px-10 dark:bg-indigo-950/35">
         <ul>
           {buttons.map((element) => (
             <ButtonNav

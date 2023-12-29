@@ -5,38 +5,41 @@ import Perfil from "../Perfil";
 import { v4 as uuidv4 } from "uuid";
 import Footer from "../Footer/Footer";
 import GitHub from "../../assets/Icon/GitHub";
+import Linkedin from "../../assets/Icon/Linkedin";
 import MailIcon from "../../assets/Icon/MailIcon";
 import Badge from "../Badge";
+import Container from "../Container";
+import Education from "../TimeLine/Education";
 
 const App = () => {
   return (
     <>
       <div className="background-overlay "></div>
       <Header></Header>
-      <main className="app flex justify-center">
-        <section
-          id="Home"
-          className="w-[700px] lg:w[740px] mx-auto py-10 text-left"
-        >
+      <main id={"Home"} className="app flex justify-center">
+        <Container id={""}>
           <Perfil key={uuidv4()} />
           <h1 className="text-typing text-4xl font-bold">
             Hola! soy Miguel Angel Chavez 👋
           </h1>
 
-          <h2 className="tracking-wider">
+          <h2 className="text-base tracking-wider">
             Desarrollador FullStack Java.
-            <span className="font-bold text-lg tracking-tighter text-blue-600 dark:text-blue-500">
-              {" </>"}
+            <span className=" font-bold text-lg tracking-tighter text-blue-600 dark:text-blue-500">
+              {" </> \n"}
             </span>
           </h2>
-        </section>
-        <section className="mt-[-2rem]">
+        </Container>
+
+        <section id="Nets">
           <ul className="flex gap-x-3">
             <Badge
               link={"https://www.linkedin.com/in/miguelangelchavez-/"}
               red={"LinkedIn"}
               shadow={"hover:shadow-blue-500/50"}
-            ></Badge>
+            >
+              <Linkedin className="size-5"></Linkedin>
+            </Badge>
 
             <Badge
               link={"https://github.com/MiguelAChavez"}
@@ -55,6 +58,22 @@ const App = () => {
             </Badge>
           </ul>
         </section>
+
+        <Container id={"My"}>
+          <Education title={"Educación"}></Education>
+        </Container>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </main>
       <Footer></Footer>
     </>
