@@ -5,7 +5,7 @@ import Perfil from "../Perfil";
 import { v4 as uuidv4 } from "uuid";
 import Footer from "../Footer/Footer";
 import GitHub from "../../assets/Icon/GitHub";
-import Linkedin from "../../assets/Icon/Linkedin";
+import LinkedInIcon from "../../assets/Icon/LinkedInIcon";
 import MailIcon from "../../assets/Icon/MailIcon";
 import Badge from "../Badge";
 import Container from "../Container";
@@ -38,7 +38,7 @@ const App = () => {
               red={"LinkedIn"}
               shadow={"hover:shadow-blue-500/50"}
             >
-              <Linkedin className="size-5"></Linkedin>
+              <LinkedInIcon className="size-5"></LinkedInIcon>
             </Badge>
 
             <Badge
