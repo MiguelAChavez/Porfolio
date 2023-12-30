@@ -17,9 +17,6 @@ html {
 }
 
 :root {
-   line-height: 3;
-   font-weight: 400;
-
    color-scheme: light dark;
 
    --scrollbar-border-thickness: 0px;
@@ -71,4 +68,10 @@ body::-webkit-scrollbar-button:vertical:start:increment,
 #preview::-webkit-scrollbar-button:horizontal:start:increment,
 #preview::-webkit-scrollbar-button:horizontal:end:decrement {
    display: var(--show-double-buttons, none);
+}
+
+@media (prefers-reduced-motion: reduce) {
+   html {
+      scroll-behavior: auto;
+   }
 }

@@ -28,6 +28,22 @@
     mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
 }
 
+.hand {
+    display: inline-block;
+    animation: greeting .5s ease-in-out infinite alternate;
+    transform-origin: 80% 90%;
+}
+
+@keyframes greeting {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(50deg);
+    }
+}
+
 
 @keyframes typing {
     from {

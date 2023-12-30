@@ -4,8 +4,8 @@ import ButtonNav from "./ButtonNav";
 import { v4 as uuidv4 } from "uuid";
 
 const buttons = [
-  { text: "Inicio", idComp: "#Home" },
   { text: "Sobre mí", idComp: "#My" },
+  { text: "Educación", idComp: "#Education" },
   { text: "Proyectos", idComp: "#Projects" },
   { text: "Contacto", idComp: "#Contact" },
 ];
@@ -13,7 +13,7 @@ const buttons = [
 const Header = () => {
   return (
     <header className="flex justify-center items-center py-3">
-      <nav className="fixed top-0 flex justify-center flex-row gap-x-10 py-2 px-10 dark:bg-indigo-950/35">
+      <nav className="fixed top-0 flex justify-center flex-row gap-x-10 py-5 px-5 dark:bg-indigo-950/35">
         <ul>
           {buttons.map((element) => (
             <ButtonNav

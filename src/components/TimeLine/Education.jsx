@@ -20,11 +20,12 @@ const items = [
   },
 ];
 
-const Education = ({ title }) => {
+const Education = ({ title, children }) => {
   return (
     <div className="py-5 px-9 border border-gray-500/45 rounded-lg bg-slate-300/10 dark:bg-gray-800/45 dark:border-gray-700">
       {title && (
-        <h2 className="text-2xl mb-8 border-b-2 border-gray-600 dark:border-gray-500 font-semibold text-gray-900 dark:text-white">
+        <h2 className="flex gap-x-2 items-center text-2xl mb-8 border-b-2 border-gray-600 dark:border-gray-500 font-semibold text-gray-900 dark:text-white">
+          {children}
           {title}
         </h2>
       )}

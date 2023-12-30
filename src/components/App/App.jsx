@@ -1,12 +1,12 @@
 import React from "react";
 import "./app.css";
 import Header from "../Header/Header";
-import Perfil from "../Perfil";
-import { v4 as uuidv4 } from "uuid";
+import Profile from "../Profile";
 import Footer from "../Footer/Footer";
 import GitHub from "../../assets/Icon/GitHub";
 import LinkedInIcon from "../../assets/Icon/LinkedInIcon";
 import MailIcon from "../../assets/Icon/MailIcon";
+import BallpenIcon from "../../assets/Icon/ballpenIcon";
 import Badge from "../Badge";
 import Container from "../Container";
 import Education from "../TimeLine/Education";
@@ -16,11 +16,11 @@ const App = () => {
     <>
       <div className="background-overlay "></div>
       <Header></Header>
-      <main id={"Home"} className="app flex justify-center">
-        <Container id={""}>
-          <Perfil key={uuidv4()} />
+      <main className="app flex justify-center">
+        <Container>
+          <Profile />
           <h1 className="text-typing text-4xl font-bold">
-            Hola! soy Miguel Angel Chavez 👋
+            Hola! soy Miguel Angel Chavez <span className="hand">👋</span>
           </h1>
 
           <h2 className="text-base tracking-wider">
@@ -58,9 +58,27 @@ const App = () => {
             </Badge>
           </ul>
         </section>
-
-        <Container id={"My"}>
-          <Education title={"Educación"}></Education>
+        <Container id={"My"} className={"pt-20-"}>
+          <h2 className="text-2xl font-semibold">About</h2>
+          <article className="text-pretty opacity-80 leading-9">
+            <p>
+              Soy Miguel Ángel, un entusiasta de la tecnología con una habilidad
+              notable para adaptarme y aprender rápidamente.
+            </p>
+            <p>
+              Mi experiencia en el campo tecnológico me ha permitido enfrentar
+              desafíos con una mentalidad abierta y buscar soluciones
+              innovadoras. Creo firmemente en el poder de la tecnología para
+              mejorar nuestras vidas y estoy constantemente buscando formas de
+              aplicar mis habilidades técnicas para hacer una diferencia
+              positiva.
+            </p>
+          </article>
+        </Container>
+        <Container className={"pt-40"} id={"Education"}>
+          <Education title={"Educación"}>
+            <BallpenIcon className={"size-5"}></BallpenIcon>
+          </Education>
         </Container>
         <br />
         <br />
