@@ -19,7 +19,7 @@ const App = () => {
       <main className="app flex justify-center">
         <Container>
           <Profile />
-          <h1 className="text-typing text-4xl font-bold">
+          <h1 className="text-typing text-4xl py-1 font-bold">
             Hola! soy Miguel Angel Chavez <span className="hand">👋</span>
           </h1>
 
@@ -58,7 +58,7 @@ const App = () => {
             </Badge>
           </ul>
         </section>
-        <Container id={"My"} className={"pt-20-"}>
+        <Container id={"My"} className={"pt-20"}>
           <h2 className="text-2xl font-semibold">About</h2>
           <article className="text-pretty opacity-80 leading-9">
             <p>

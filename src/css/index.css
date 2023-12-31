@@ -18,7 +18,6 @@ html {
 
 :root {
    color-scheme: light dark;
-
    --scrollbar-border-thickness: 0px;
    --show-double-buttons: none;
    --scrollbar-width: 15px;
