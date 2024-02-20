@@ -6,22 +6,18 @@ import ToggleTheme from "../ToggleTheme";
 
 const buttons = [
   { text: "Sobre mí", idComp: "#My" },
-  { text: "Educación", idComp: "#Education" },
   { text: "Proyectos", idComp: "#Projects" },
-  { text: "Contacto", idComp: "#Contact" },
+  { text: "Educación", idComp: "#Education" },
+  { text: "Habilidades", idComp: "#Skills" },
 ];
 
 const Header = () => {
   return (
     <header className="relative flex justify-center items-center py-3">
-      <nav className="fixed top-0 flex justify-center flex-row gap-x-10 py-5 px-5 dark:bg-indigo-950/35">
+      <nav className="fixed top-0 flex justify-center flex-row gap-x-10 py-5 px-5 mt-2 dark:bg-indigo-950/35">
         <ul>
           {buttons.map((element) => (
-            <ButtonNav
-              key={uuidv4()}
-              text={element.text}
-              idComp={element.idComp}
-            ></ButtonNav>
+            <ButtonNav key={uuidv4()} text={element.text} idComp={element.idComp}></ButtonNav>
           ))}
         </ul>
       </nav>

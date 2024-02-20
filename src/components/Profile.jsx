@@ -10,7 +10,7 @@ const image = {
 const Perfil = () => {
   return (
     <figure
-      className={`${style.img} shadow-lg shadow-indigo-300 dark:shadow-indigo-950`}
+      className={`${style.img} shadow-lg shadow-indigo-400/55 dark:shadow-indigo-950`}
     >
       <img src={image.url} alt={image.name} title={`Perfil de ${image.name}`} />
     </figure>
