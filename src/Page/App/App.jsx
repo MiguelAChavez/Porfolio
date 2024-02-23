@@ -1,17 +1,19 @@
 import React from "react";
 import "./app.css";
-import Header from "../Header/Header";
-import Profile from "../Profile";
-import Footer from "../Footer/Footer";
+import Header from "../../components/Header/Header";
+import Profile from "../../components/Profile";
+import Footer from "../../components/Footer/Footer";
 import GitHub from "../../assets/Icon/GitHub";
 import LinkedInIcon from "../../assets/Icon/LinkedInIcon";
 import MailIcon from "../../assets/Icon/MailIcon";
 import BallpenIcon from "../../assets/Icon/ballpenIcon";
-import Badge from "../Badge";
-import Container from "../Container";
-import Education from "../TimeLine/Education";
+import Badge from "../../components/Badge";
+import Container from "../../components/Container";
+import Education from "../../components/TimeLine/Education";
 
 const App = () => {
+  const cvUrl =
+    "https://drive.google.com/file/d/18nyHnuLvtKjpna2pFjEJ4WdzNVPMVSsl/view?usp=sharing";
   return (
     <>
       <div className="background-overlay"></div>
@@ -58,11 +60,7 @@ const App = () => {
               <MailIcon className="size-5"></MailIcon>
             </Badge>
 
-            <Badge
-              link={"../../assets/Miguel_Angel_Chavez_cv.pdf"}
-              isDownload={true}
-              red={"Cv"}
-            ></Badge>
+            <Badge link={cvUrl} red={"Cv"}></Badge>
           </ul>
         </section>
 
