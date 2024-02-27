@@ -10,7 +10,7 @@ import BallpenIcon from "../../assets/Icon/ballpenIcon";
 import Badge from "../../components/Badge";
 import Container from "../../components/Container";
 import Education from "../../components/TimeLine/Education";
-
+import ProjectsContainer from "../../components/Project/ProjectsContainer";
 const App = () => {
   const cvUrl =
     "https://drive.google.com/file/d/18nyHnuLvtKjpna2pFjEJ4WdzNVPMVSsl/view?usp=sharing";
@@ -26,7 +26,7 @@ const App = () => {
           </h1>
 
           <h3 className="text-lg tracking-wider text-emerald-950 dark:text-yellow-200">
-            Desarrollador FullStack
+            Desarrollador Full Stack
             <span className=" font-bold text-lg tracking-tighter text-blue-600 dark:text-blue-500">
               {" </>"}
             </span>
@@ -60,7 +60,7 @@ const App = () => {
               <MailIcon className="size-5"></MailIcon>
             </Badge>
 
-            <Badge link={cvUrl} red={"Cv"}></Badge>
+            <Badge link={cvUrl} red={"Cv"} shadow={"hover:shadow-amber-600/30"}></Badge>
           </ul>
         </section>
 
@@ -77,6 +77,7 @@ const App = () => {
 
         <Container id={"Projects"} className={"pt-40"}>
           <h2>Proyectos</h2>
+          <ProjectsContainer></ProjectsContainer>
         </Container>
 
         <Container className={"pt-40"} id={"Education"}>
@@ -88,20 +89,11 @@ const App = () => {
         <Container id={"Skills"} className={"pt-40"}>
           <div className="py-5 px-9 border border-gray-500/45 rounded-lg bg-slate-300/10 dark:bg-gray-800/45 dark:border-gray-700">
             <h2 className="flex gap-x-2 items-center text-2xl mb-8 border-b-2 border-gray-600 dark:border-gray-500 font-semibold text-gray-900 dark:text-white">
-              Tecnologías
+              Hard skills
             </h2>
-
-            <h2 className="flex gap-x-2 items-center text-2xl my-8 border-b-2 border-gray-600 dark:border-gray-500 font-semibold text-gray-900 dark:text-white"></h2>
           </div>
         </Container>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <br />
       </main>
       <Footer></Footer>

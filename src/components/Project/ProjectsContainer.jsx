@@ -1,11 +1,18 @@
-import { uuid } from "uuidv4";
-const Project = [];
+import Data from "../../Projects.json";
+import Project from "./Project";
+
 const ProjectsContainer = () => {
   return (
     <div>
       <ul>
-        {Project.map(() => (
-          <Project key={uuid()}></Project>
+        {Data.Projects.map((e) => (
+          <Project
+            key={crypto.randomUUID()}
+            title={e.Project.title}
+            description={e.Project.description}
+            skills={e.Project.skills}
+            url={e.Project.url}
+          ></Project>
         ))}
       </ul>
     </div>

@@ -1,25 +1,32 @@
+import { ExternalLink, ExternalLinkOff } from "../../assets/Icon/LinkIcon";
 import Skill from "./Skill";
 
-const Project = ({ img, title, description, skills }) => {
+const Project = ({ img, url, title, description, skills }) => {
   return (
-    <li>
-      <div>
+    <li className="transition-all  hover:scale-[1.01]  my-10 px-3">
+      <div className="rounded-xl hover:outline  outline-emerald-300/10 bg-slate-800/30  px-5 py-4">
         <article>
           <img loading="lazy" src={img} alt={title} />
         </article>
-        <article>
-          <h3 className="">
+        <article className="flex flex-col gap-3">
+          <h3 className="text-lg flex justify-between">
             {title}
-            <span className="">
-              <Arrow></Arrow>
+            <span>
+              {url ? (
+                <a href={url} className="hover:text-emerald-300  cursor-pointer" target="_blank">
+                  <ExternalLink />
+                </a>
+              ) : (
+                <ExternalLinkOff />
+              )}
             </span>
           </h3>
-          <p className="">{description}</p>
+          <p className="text-pretty">{description}</p>
 
-          {skills ?? (
-            <ul className="">
-              {skills.map(() => (
-                <Skill></Skill>
+          {skills && (
+            <ul className="inline-block my-2">
+              {skills.map((e) => (
+                <Skill key={crypto.randomUUID()} icon={e.icon} name={e.name}></Skill>
               ))}
             </ul>
           )}

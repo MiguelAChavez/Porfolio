@@ -1,22 +1,36 @@
 {
   "Projects": [
     {
-      "title": "",
-      "img": "",
-      "description": "",
-      "skills": [{ "name": "", "icon": "" }]
+      "Project": {
+        "title": "SGM",
+        "img": "",
+        "url": "",
+        "description": "sistema de gestión de inventario \"SGM\" en la empresa DIOGGI S.A., el cual utilizará tecnologías web para mejorar la eficiencia en la gestión del inventario. Este sistema permitirá realizar un seguimiento preciso de los niveles de inventario y gestionar de manera eficiente los pedidos y el reabastecimiento de productos.",
+        "skills": [
+          { "name": "Java", "icon": "" },
+          { "name": "Spring Boot", "icon": "" },
+          { "name": "Spring MVC", "icon": "" },
+          { "name": "Spring Security", "icon": "" }
+        ]
+      }
     },
     {
-      "title": "",
-      "img": "",
-      "description": "",
-      "skills": [{ "name": "", "icon": "" }]
+      "Project": {
+        "title": "",
+        "img": "",
+        "url": "",
+        "description": "",
+        "skills": [{ "name": "", "icon": "" }]
+      }
     },
     {
-      "title": "",
-      "img": "",
-      "description": "",
-      "skills": [{ "name": "", "icon": "" }]
+      "Project": {
+        "title": "",
+        "img": "",
+        "url": "",
+        "description": "",
+        "skills": [{ "name": "", "icon": "" }]
+      }
     }
   ]
 }
