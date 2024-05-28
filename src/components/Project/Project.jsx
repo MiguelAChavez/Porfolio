@@ -3,8 +3,8 @@ import Skill from "./Skill";
 
 const Project = ({ img, url, title, description, skills }) => {
   return (
-    <li className="transition-all  hover:scale-[1.01]  my-10 px-3">
-      <div className="rounded-xl hover:outline  outline-emerald-300/10 bg-slate-800/30  px-5 py-4">
+    <li className="transition-all   hover:scale-[1.01]  my-10 px-3">
+      <div className="rounded-xl border-[1px] border-gray-500/45  hover:outline outline-1 outline-sky-500 bg-slate-800/30  px-5 py-4">
         <article>
           <img loading="lazy" src={img} alt={title} />
         </article>
@@ -13,7 +13,12 @@ const Project = ({ img, url, title, description, skills }) => {
             {title}
             <span>
               {url ? (
-                <a href={url} className="hover:text-emerald-300  cursor-pointer" target="_blank">
+                <a
+                  href={url}
+                  className="hover:text-emerald-300  hover:underline cursor-pointer "
+                  target="_blank"
+                >
+                  <span className="px-2">GitHub</span>
                   <ExternalLink />
                 </a>
               ) : (

@@ -13,7 +13,7 @@ import Education from "../../components/TimeLine/Education";
 import ProjectsContainer from "../../components/Project/ProjectsContainer";
 const App = () => {
   const cvUrl =
-    "https://drive.google.com/file/d/18nyHnuLvtKjpna2pFjEJ4WdzNVPMVSsl/view?usp=sharing";
+    "https://drive.google.com/file/d/1YFJD9iDSXGvOeGH5yJmqt6IxO8YKbkdX/view?usp=drive_link";
   return (
     <>
       <div className="background-overlay"></div>

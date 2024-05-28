@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../css/perfil.module.css";
-import Miguel from "../assets/perfilMiguel.png";
+import Miguel from "../assets/perfilMiguel.jpg";
 
 const image = {
   url: Miguel,
