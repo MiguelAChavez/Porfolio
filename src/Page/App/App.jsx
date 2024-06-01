@@ -91,6 +91,17 @@ const App = () => {
             <h2 className="flex gap-x-2 items-center text-2xl mb-8 border-b-2 border-gray-600 dark:border-gray-500 font-semibold text-gray-900 dark:text-white">
               Hard skills
             </h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>SQL</li>
+              <li>MongoDB</li>
+            </ul>
           </div>
         </Container>
 

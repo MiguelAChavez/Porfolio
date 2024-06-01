@@ -10,17 +10,26 @@
           { "name": "Java", "icon": "" },
           { "name": "Spring Boot", "icon": "" },
           { "name": "Spring MVC", "icon": "" },
-          { "name": "Spring Security", "icon": "" }
+          { "name": "Spring Security", "icon": "" },
+          { "name": "JavaScript" },
+          { "name": "HTML" },
+          { "name": "CSS" }
         ]
       }
     },
     {
       "Project": {
-        "title": "",
-        "img": "",
-        "url": "",
-        "description": "",
-        "skills": [{ "name": "", "icon": "" }]
+        "title": "Whatsapp Clone",
+        "img": "https://res.cloudinary.com/ddxmx9rf3/image/upload/v1717165595/Images/572shots_so_gyt8di.png",
+        "url": "https://github.com/MiguelAChavez/WhatsApp_Clone",
+        "description": "  Se trata de una iniciativa centrada en estudiar y replicar las funcionalidades principales de la popular aplicación de mensajería instantánea WhatsApp.\nEl objetivo principal de este proyecto es adquirir experiencia práctica en el desarrollo de aplicaciones web y en la implementación de características de mensajería instantánea similares a las de WhatsApp.",
+        "skills": [
+          { "name": "Node.js" },
+          { "name": "Express.js" },
+          { "name": "JavaScript" },
+          { "name": "React" },
+          { "name": "TailwindCss" }
+        ]
       }
     },
     {

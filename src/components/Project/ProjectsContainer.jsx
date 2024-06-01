@@ -11,6 +11,7 @@ const ProjectsContainer = () => {
             title={e.Project.title}
             description={e.Project.description}
             skills={e.Project.skills}
+            img={e.Project.img}
             url={e.Project.url}
           ></Project>
         ))}

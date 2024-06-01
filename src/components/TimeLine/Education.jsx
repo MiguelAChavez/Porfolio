@@ -15,8 +15,13 @@ const items = [
   },
   {
     title: "Desarrollador web con React js",
-    date: "2023",
+    date: "Noviembre  2023",
     description: "Argentina Programa 4.0 - UTN",
+  },
+  {
+    title: "Programación en Python",
+    date: "marzo - mayo 2024",
+    description: "Fundación Telefonica Movistar",
   },
 ];
 
